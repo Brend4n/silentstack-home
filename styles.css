@@ -92,12 +92,14 @@ a:hover {
 
 /* Animated underline for inline links */
 .formerly a,
+main > p a,
 section > p a,
 .subtitle a {
   position: relative;
 }
 
 .formerly a::after,
+main > p a::after,
 section > p a::after,
 .subtitle a::after {
   content: '';
@@ -111,6 +113,7 @@ section > p a::after,
 }
 
 .formerly a:hover::after,
+main > p a:hover::after,
 section > p a:hover::after,
 .subtitle a:hover::after {
   width: 100%;
