@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Privacy Policy - SilentStack, Inc.</title>
-  <link rel="stylesheet" type="text/css" href="styles.css?v12">
+  <link rel="stylesheet" type="text/css" href="styles.css?v13">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name=viewport content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -14,38 +14,79 @@
   <meta name="theme-color" content="#ffffff">
   <style>
     #container {
-      line-height: 1.6;
       max-width: 800px;
     }
     .privacy-content {
       text-align: left;
     }
     .privacy-content h1 {
-      border-bottom: 2px solid #333;
-      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
+      margin-bottom: 24px;
     }
     .privacy-content h2 {
-      color: #333;
-      margin-top: 30px;
+      color: var(--white);
+      margin-top: 36px;
+      margin-bottom: 16px;
     }
     .privacy-content h3 {
-      color: #555;
-      margin-top: 20px;
+      color: var(--accent-color);
+      margin-top: 24px;
+      margin-bottom: 12px;
     }
-    .privacy-content p, .privacy-content li {
+    .privacy-content h4 {
+      color: var(--main-text-color);
+      margin-top: 20px;
       margin-bottom: 10px;
+    }
+    .privacy-content p {
+      margin-bottom: 16px;
     }
     .privacy-content ul {
       margin-left: 20px;
+      margin-bottom: 16px;
+    }
+    .privacy-content li {
+      margin-bottom: 8px;
+    }
+    .privacy-content a {
+      color: var(--white);
+      position: relative;
+    }
+    .privacy-content a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--accent-color);
+      transition: width 0.3s ease;
+    }
+    .privacy-content a:hover::after {
+      width: 100%;
     }
     .back-link {
       display: inline-block;
-      margin-bottom: 20px;
-      text-decoration: none;
-      color: #007bff;
+      margin-bottom: 24px;
+      color: var(--main-text-color);
+      position: relative;
+    }
+    .back-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--accent-color);
+      transition: width 0.3s ease;
     }
     .back-link:hover {
-      text-decoration: underline;
+      color: var(--white);
+    }
+    .back-link:hover::after {
+      width: 100%;
     }
   </style>
 </head>
@@ -53,9 +94,9 @@
   <div id="container">
     <img id="logo" src="images/logo.svg" alt="logo">
     <h1>SilentStack, Inc.</h1>
-    
+
     <a href="/" class="back-link">← Back to Home</a>
-    
+
     <main class="privacy-content">
       <h1>Privacy Policy</h1>
       <p><strong>Last updated: September 9, 2025</strong></p>
